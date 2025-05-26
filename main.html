@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AYOOOOOY🌚</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 class="title">ALL MOANS ARE MY HONEY🥰😍🌚</h1>
+        </div>
+        <div class="container"></div>
+        <script>
+            let container = document.querySelector('.container');
+            let num = 6;
+            const imageFiles = [
+                'yoya.jpg',
+                'yoya1.jpg',
+                'yoya2.png',
+                'yoya4.jpg',
+                'yoya6.jpg',
+                'yoya7.jpg'
+            ];
+            for (let i = 0; i < num; i++) {
+                let card = document.createElement('div');
+                card.className = 'card';
+                let zpos = i * -120;
+                let ypos = i * -20;
+                card.style.transform = `translateZ(${zpos}px) translateY(${ypos}px)`;
+                card.style.backgroundImage = `url(img/${imageFiles[i]})`;
+
+                container.append(card);
+            }
+        </script>
+    </body>
+
+</html>
